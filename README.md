@@ -4,15 +4,8 @@
 
 [![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=dark)](https://github.com/lcalmsky/github-readme-stats)
 
-#### 🔭 I’m currently working on ...
+- 🔭 I’m currently working on 11st corp as a Java back-end developer.
 
-#### 🌱 I’m currently learning ...
+- 🌱 I'm currently learning TDD.
 
-#### 👯 I’m looking to collaborate on ...
-
-#### 🤔 I’m looking for help with ...
-
-#### 💬 Ask me about ...
-
-#### 📫 How to reach me
-lcalmsky@gmail.com
+- :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
