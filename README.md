@@ -10,4 +10,4 @@
 - 🔭 I’m currently working on Eleventh Avenue in charge of SK pay as a Java back-end developer.
 - 🌱 I'm currently learning TDD.
 
-You can also check my resume [here](https://github.com/lcalmsky/lcalmsky/tree/main/resume).
+You can also check my resume [here](https://github.com/lcalmsky/lcalmsky/tree/main/docs/resume.md).
