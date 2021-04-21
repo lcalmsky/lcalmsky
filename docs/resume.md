@@ -34,16 +34,31 @@ lcalmsky@gmail.com
 
 ### 십일번가
 
+
 <p style="text-align: right; font-family: 'Fira Code',monospace">2019.09~재직중</p>
+
+#### 마이데이터 (2020.03 - 진행중)
+#### SK pay AML (2020.12 - 진행중)
+#### SK pay FDS (2020.07 - 2020.12)
+#### SK pay FDS 적용 및 고도화 (2020.01 - 2020.06)
+#### SK pay 통합 인증 로그인 개발 (2019.10 - 2020.01)
 
 ### 고퀄
 
 <p style="text-align: right; font-family: 'Fira Code',monospace">2019.02~2019.08</p>
 
+#### IoT 플랫폼 구축 및 개발 (2019.02 - 2019.07)
+
 ### 넷맨
 
 <p style="text-align: right; font-family: 'Fira Code',monospace">2017.11~2019.02</p>
 
+#### WebOS 기반 네트워크 보안 솔루션 클라우드 플랫폼 개발 (2017.11 - 2019.02) 
+
 ### 헤리트
 
 <p style="text-align: right; font-family: 'Fira Code',monospace">2014.03~2017.04</p>
+
+#### HURA Center 시스템 개발 (2017.03-2017.04)
+#### KTT 다원DNS_IoT플랫폼 솔루션 (2017.01 - 2017.03)
+#### LGU+ 홈IoT 플랫폼 구축 및 개발
