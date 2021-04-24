@@ -26,7 +26,14 @@ lcalmsky@gmail.com
 
 <h2 style="text-align: center">Skill Set</h2>
 
-`java` `gradle` `maven` `groovy` `r` `spring-boot-web` `spring-boot-batch` `spring-boot-data` `spring-boot-security` `spring-boot-cloud` `spring-boot-test` `spring-boot-config` `spring-boot-oauth` `spring-boot-gateway` `spring-boot-kafka` `JPA` `hibernate` `mybatis` `redis` `junit` `mockito` `restdocs` `jacoco` `docker` `kubernetes` `jenkins` `ansible` `mysql` `oracle` `mariadb` `github` `gitlab` `bitbucket` `confluence` `jira`
+- `java` `gradle` `maven` `groovy` `r`
+- `spring-boot-web` `spring-boot-batch` `spring-boot-data` `spring-boot-security` `spring-boot-cloud` `spring-boot-test` `spring-boot-config` `spring-boot-oauth` `spring-boot-gateway` `spring-boot-kafka`
+- `JPA` `hibernate` `mybatis` `redis`
+- `junit` `mockito` `restdocs` `jacoco`
+- `docker` `kubernetes` `jenkins` `ansible`
+- `mysql` `oracle` `mariadb`
+- `github` `gitlab` `bitbucket` `confluence` `jira`
+- `aws` `azure`
 
 [//]: <> "![Bintray](https://img.shields.io/badge/Java-brightgreen?style=flat) ![Bintray](https://img.shields.io/badge/gradle-brightgreen?style=flat) ![Bintray](https://img.shields.io/badge/maven-brightgreen?style=flat) ![Bintray](https://img.shields.io/badge/Groovy-brightgreen?style=flat) ![Bintray](https://img.shields.io/badge/R-brightgreen?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--web-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--batch-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--data-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--security-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--cloud-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--test-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--config-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--oauth-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--gateway-green?style=flat) ![Bintray](https://img.shields.io/badge/spring--boot--kafka-green?style=flat) ![Bintray](https://img.shields.io/badge/JPA-yellowgreen?style=flat) ![Bintray](https://img.shields.io/badge/hibernate-yellowgreen?style=flat) ![Bintray](https://img.shields.io/badge/MyBatis-yellowgreen?style=flat) ![Bintray](https://img.shields.io/badge/redis-yellowgreen?style=flat) ![Bintray](https://img.shields.io/badge/JUnit-yellow?style=flat) ![Bintray](https://img.shields.io/badge/Mockito-yellow?style=flat) ![Bintray](https://img.shields.io/badge/RESTDocs-yellow?style=flat) ![Bintray](https://img.shields.io/badge/jacoco-yellow?style=flat) ![Bintray](https://img.shields.io/badge/docker-orange?style=flat) ![Bintray](https://img.shields.io/badge/kubernetes-orange?style=flat) ![Bintray](https://img.shields.io/badge/jenkins-orange?style=flat) ![Bintray](https://img.shields.io/badge/ansible-orange?style=flat) ![Bintray](https://img.shields.io/badge/MySQL-red?style=flat) ![Bintray](https://img.shields.io/badge/oracle-red?style=flat) ![Bintray](https://img.shields.io/badge/mariaDB-red?style=flat) ![Bintray](https://img.shields.io/badge/Github-blue?style=flat) ![Bintray](https://img.shields.io/badge/Gitlab-blue?style=flat) ![Bintray](https://img.shields.io/badge/Bitbucket-blue?style=flat) ![Bintray](https://img.shields.io/badge/Confluence-blue?style=flat) ![Bintray](https://img.shields.io/badge/Jira-blue?style=flat)"
 
@@ -34,7 +41,7 @@ lcalmsky@gmail.com
 
 ### 십일번가
 
-###### 2019.09 - 재직중 / Payment개발팀 / 매니저
+###### 2019.09 - 재직중 / Payment 개발팀 / 매니저
 
 ###### 인증 서버 개발, FDS 서버 개발, AML 시스템 구축 프로젝트 리더 및 서버 개발, 마이데이터 분석시스템 서버 개발
 
