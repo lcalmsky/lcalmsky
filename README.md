@@ -13,4 +13,4 @@
 - 🌱 I'm currently learning TDD.
 
 
-You can also check my resume [here](https://lcalmsky.github.io/).
+You can also check my resume [here](https://github.com/lcalmsky/lcalmsky/blob/main/docs/resume.md).
