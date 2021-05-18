@@ -9,7 +9,7 @@
 [//]: <> "[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact)]()"
 
 - :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
-- 🔭 I’m currently working on Eleventh Avenue in charge of SK pay as a Java back-end developer.
+- 🔭 I’m currently working on 11st in charge of SK pay as a Java back-end developer.
 - 🌱 I'm currently learning TDD.
 
 
