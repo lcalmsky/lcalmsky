@@ -16,11 +16,11 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
 
 
-[//]: <> ![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)&nbsp;&nbsp;
-[//]: <> ![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)&nbsp;&nbsp;
-[//]: <> ![MySQL](https://img.shields.io/badge/-MySQL-black?logo=mysql&style=social)&nbsp;&nbsp;
-[//]: <> ![Git](https://img.shields.io/badge/-Git-black?logo=git&style=social)&nbsp;&nbsp;
-[//]: <> ![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)&nbsp;&nbsp;
+[//]: <> "![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)"
+[//]: <> "![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)"
+[//]: <> "![MySQL](https://img.shields.io/badge/-MySQL-black?logo=mysql&style=social)"
+[//]: <> "![Git](https://img.shields.io/badge/-Git-black?logo=git&style=social)"
+[//]: <> "![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)"
 
 
 ### Links
