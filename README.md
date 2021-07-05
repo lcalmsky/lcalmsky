@@ -15,5 +15,4 @@
 
 You can also check my resume [here](https://lcalmsky.github.io/resume/).
 
-![GitHub followers](https://img.shields.io/github/followers/lcalmsky?style=social)
-[![website](https://img.shields.io/badge/Blog-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://jaime-note.tistory.com/)](https://jaime-note.tistory.com)
+![](https://img.shields.io/github/followers/lcalmsky?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Follow) ![](https://freshidea.com/jonah/app/lcalmsky-profile-views)
