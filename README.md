@@ -15,7 +15,5 @@
 
 You can also check my resume [here](https://lcalmsky.github.io/resume/).
 
-![](https://img.shields.io/github/followers/lcalmsky?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Follow) ![](https://freshidea.com/jonah/app/lcalmsky-profile-views)
-
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
 
