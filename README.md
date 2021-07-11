@@ -13,7 +13,7 @@
 ### Top Languages
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)](https://github.com/lcalmksy)
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&layout=compact)](https://github.com/lcalmksy)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky)](https://github.com/lcalmksy)
 
 ### GitHub Trophies
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
