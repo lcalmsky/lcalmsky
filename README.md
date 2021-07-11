@@ -7,12 +7,11 @@
 - 🔭 I’m currently working on 11st in charge of SK pay as a Java back-end developer.
 - 🌱 I'm currently learning TDD.
 
-[//]: <> "dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula"
-
-[//]: <> "[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact)]()"
-
 ### GitHub stats
 [![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)]()
+
+### Top Languages
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact)]()
 
 ### GitHub Trophies
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
