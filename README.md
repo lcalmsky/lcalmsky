@@ -1,4 +1,4 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flcalmsky%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)]()
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flcalmsky%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://github.com/lcalmksy)
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/images/jaimes-github-logo-poiret-one-regular.gif)
 
@@ -8,10 +8,12 @@
 - 🌱 I'm currently learning TDD.
 
 ### GitHub stats
-[![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)]()
+[![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmksy)
 
 ### Top Languages
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)]()
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)](https://github.com/lcalmksy)
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&layout=compact)](https://github.com/lcalmksy)
 
 ### GitHub Trophies
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
