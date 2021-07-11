@@ -11,7 +11,7 @@
 [![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)]()
 
 ### Top Languages
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact)]()
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)]()
 
 ### GitHub Trophies
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
