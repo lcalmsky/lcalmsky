@@ -26,8 +26,9 @@ lcalmsky@gmail.com
 
 <h2 style="text-align: center">Skill Set</h2>
 
-- `java` `gradle` `maven` `groovy` `r`
-- `spring-boot-web` `spring-boot-batch` `spring-boot-data` `spring-boot-security` `spring-boot-cloud` `spring-boot-test` `spring-boot-config` `spring-boot-oauth` `spring-boot-gateway` `spring-boot-kafka`
+- `java` `gradle` `maven`
+- `spring boot` `spring cloud`
+- `spring-boot-web` `spring-boot-batch` `spring-boot-data` `spring-boot-security` `spring-boot-test` `spring-boot-config` `spring-boot-oauth` `spring-boot-gateway`
 - `JPA` `hibernate` `mybatis` `redis`
 - `junit` `mockito` `restdocs` `jacoco`
 - `docker` `kubernetes` `jenkins` `ansible`
