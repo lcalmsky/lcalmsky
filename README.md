@@ -29,10 +29,10 @@
 <p align="center">
 <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>
 <img alt="Gradle" src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white"/>
-<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache maven&logoColor=white"/>
-<img alt="Groovy" src="https://img.shields.io/badge/groovy-4298B8?style=for-the-badge&logo=apache groovy&logoColor=white"/>
+<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache%20maven&logoColor=white"/>
+<img alt="Groovy" src="https://img.shields.io/badge/groovy-4298B8?style=for-the-badge&logo=apache%20groovy&logoColor=white"/>
 <br>
-<img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white"/>
+<img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white"/>
 <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/>
 <br>
 <img alt="MySQL" src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
@@ -56,11 +56,11 @@
 <img alt="Confluence" src="https://img.shields.io/badge/confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white"/>
 <img alt="Jira" src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
 <br>
-<img alt="AWS" src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon aws&logoColor=white"/>
-<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft azure&logoColor=white"/>
+<img alt="AWS" src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon%20aws&logoColor=white"/>
+<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>
 <br>
-<img alt="IntelliJ" src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellij idea&logoColor=white"/>
-<img alt="Eclipse" src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse ide&logoColor=white"/>
+<img alt="IntelliJ" src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellij%20idea&logoColor=white"/>
+<img alt="Eclipse" src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse%20ide&logoColor=white"/>
 </p>
 
 ### Links
