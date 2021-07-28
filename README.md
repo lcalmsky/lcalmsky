@@ -56,6 +56,7 @@
 <img alt="Bitbucket" src="https://img.shields.io/badge/bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white"/>
 <img alt="Confluence" src="https://img.shields.io/badge/confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white"/>
 <img alt="Jira" src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
+<img alt="Slack" src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
 <br>
 <img alt="AWS" src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon%20aws&logoColor=white"/>
 <img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>
