@@ -1,3 +1,7 @@
+이제부터 포스팅 할 내용은 `.proto` 파일 문법을 포함하여 프로토콜 버퍼 데이터를 구조화하기 위해 프로토콜 버퍼 언어를 사용하는 방법과 `.proto` 파일에서 데이터 액세스 클래스를 생성하는 방법을 다룰 예정입니다.
+
+## 메시지 타입 정의
+
 먼저 간단한 예제를 살펴보겠습니다.
 
 검색 요청에 쿼리 문자열, 결과 페이지 및 페이지 당 결과 수가 있는 검색 요청 메시지 형식을 정의하려고 한다고 가정해 보겠습니다.
@@ -118,12 +122,4 @@ Input/Output Stream에서 메시지를 분석합니다.
 
 다음 포스팅에서는 `Scalar Value Type`과 기본 값에 대해 알아보겠습니다.
 
-For C++, the compiler generates a .h and .cc file from each .proto, with a class for each message type described in your file.
-For Java, the compiler generates a .java file with a class for each message type, as well as a special Builder classes for creating message class instances.
-For Kotlin, in addition to the Java generated code, the compiler generates a .kt file for each message type, containing a DSL which can be used to simplify creating message instances.
-Python is a little different – the Python compiler generates a module with a static descriptor of each message type in your .proto, which is then used with a metaclass to create the necessary Python data access class at runtime.
-For Go, the compiler generates a .pb.go file with a type for each message type in your file.
-For Ruby, the compiler generates a .rb file with a Ruby module containing your message types.
-For Objective-C, the compiler generates a pbobjc.h and pbobjc.m file from each .proto, with a class for each message type described in your file.
-For C#, the compiler generates a .cs file from each .proto, with a class for each message type described in your file.
-For Dart, the compiler generates a .pb.dart file with a class for each message type in your file.
+> 본 포스팅은 [`gRPC` 공식 문서](https://grpc.io/docs/what-is-grpc/introduction/)를 참고하여 작성하였습니다.
