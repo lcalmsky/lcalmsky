@@ -4,8 +4,7 @@
 
 ### Hi there 👋
 - :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
-- 🔭 I’m currently working on 11st in charge of SK pay as a Java back-end developer.
-- 🌱 I'm currently learning TDD.
+- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/11street-logo.png|width=20) in charge of SK pay FDS/AML and MyData as a Java back-end developer.
 
 ### GitHub stats
 [![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmksy)
