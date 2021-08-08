@@ -25,7 +25,7 @@ map<string, Project> projects = 3;
 * 텍스트 포맷에서 `map`을 파싱할 때는 중복 키가 있는 경우 파싱이 실패할 수 있습니다.
 * 키는 존재하고 값을 제공하지 않는 경우 언어마다 다르게 직렬화됩니다. `C++,` `Java`, `Kotlin`, `Python`에서는 기본 값이 직렬화되지만 다른 언어에서는 아무 것도 직렬화되지 않습니다.
 
-생성된 `map` `API`는 현재 모든 `proto3`를 지원하는 언어에서 사용 가능하고 관련해서는 [여기](https://developers.google.com/protocol-buffers/docs/reference/overview)를 참조하시면 됩니다.
+생성된 `map` `API`는 현재 모든 `proto3`를 지원하는 언어에서 사용 가능하고 관련해서는 [여기](https://developers.google.com/protocol-buffers/docs/reference/overview)를 참조하시면 됩니다. 
 
 ### 하위 호환성
 
@@ -37,7 +37,7 @@ message MapFieldEntry {
   value_type value = 2;
 }
 
-    repeated MapFieldEntry map_field = N;
+repeated MapFieldEntry map_field = N;
 ```
 
 `map`을 지원하는 모든 프로토콜 버퍼 구현은 위의 정의에서 허용할 수 있는 데이터를 생성하고 허용해야 합니다.
@@ -57,7 +57,7 @@ message Open { ... }
 message Foo {
   ...
   foo.bar.Open open = 1;
-    ...
+  ...
 }
 ```
 
