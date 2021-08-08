@@ -20,7 +20,7 @@ service SearchService {
 
 또한 프로토콜 버퍼용 `RPC` 구현을 개발하기 위해 진행 중인 여러 3rd-party 프로젝트가 있습니다.
 
-우리가 알고 있는 프로젝트에 대한 링크 목록은 [3rd-party 애드온 위키 페이지](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md)를 참조하세요.
+프로젝트에 대한 링크 목록은 [3rd-party 위키 페이지](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md)를 참조하세요.
 
 ## JSON 매핑하기
 
@@ -36,19 +36,19 @@ service SearchService {
 
 |proto3|JSON|JSON example|Notes|
 |---|---|---|---|
-|message|object|{"fooBar": v, "g": null, …}|JSON 객체를 생성합니다. 메시지 필드 이름은 lowerCamelCase에 매핑되어 JSON 객체 키가 됩니다. json_name 필드 옵션이 지정되면 지정된 값이 대신 키로 사용됩니다. 파서는 lowerCamelCase 이름(또는 json_name 옵션으로 지정된 이름)과 원래 proto 필드 이름을 모두 허용합니다. null은 모든 필드 유형에 대해 허용되는 값이며 해당 필드 유형의 기본값으로 처리됩니다.|
-|enum|string|"FOO_BAR"|proto에 지정된 열거형 값의 이름이 사용됩니다. 파서는 열거형 이름과 정수 값을 모두 허용합니다.|
+|message|object|{"fooBar": v, "g": null, …}|JSON 객체를 생성합니다.<br>메시지 필드 이름은 lowerCamelCase에 매핑되어 JSON 객체 키가 됩니다.<br>json_name 필드 옵션이 지정되면 지정된 값이 대신 키로 사용됩니다.<br>파서는 lowerCamelCase 이름(또는 json_name 옵션으로 지정된 이름)과 원래 proto 필드 이름을 모두 허용합니다.<br>null은 모든 필드 유형에 대해 허용되는 값이며 해당 필드 유형의 기본값으로 처리됩니다.|
+|enum|string|"FOO_BAR"|proto에 지정된 열거형 값의 이름이 사용됩니다.<br>파서는 열거형 이름과 정수 값을 모두 허용합니다.|
 |map<K,V>|object|{"k": v, …}|모든 키는 문자열로 변환됩니다.|
 |repeated V|array|[v, …]|null은 빈 리스트로 ([]) 허용됩니다.|
 |bool|true, false|true, false|
 |string|string|"Hello World!"|
-|bytes|base64 string|"YWJjMTIzIT8kKiYoKSctPUB+"|JSON 값은 패딩이 있는 표준 base64 인코딩을 사용하여 문자열로 인코딩된 데이터입니다. 표준 또는 URL 안전 base64 인코딩(패딩 유무 포함)이 허용됩니다.|
+|bytes|base64 string|"YWJjMTIzIT8kKiYoKSctPUB+"|JSON 값은 패딩이 있는 표준 base64 인코딩을 사용하여 문자열로 인코딩된 데이터입니다.<br>표준 또는 URL 안전 base64 인코딩(패딩 유무 포함)이 허용됩니다.|
 |int32, fixed32, uint32|number|1, -10, 0|JSON 값은 십진수입니다. 숫자 또는 문자열이 허용됩니다.|
 |int64, fixed64, uint64|string|"1", "-10"|JSON 값은 10진수 문자열입니다. 숫자 또는 문자열이 허용됩니다.|
-|float, double|number|1.1, -10.0, 0, "NaN", "Infinity"|JSON 값은 숫자 또는 특수 문자열 값 "NaN", "Infinity" 및 "-Infinity" 중 하나입니다. 숫자 또는 문자열이 허용됩니다. 지수 표기법도 허용됩니다. -0은 0과 동일한 것으로 간주됩니다.|
-|Any|object|{"@type": "url", "f": v, … }|Any에 특별한 JSON 매핑이 있는 값이 포함되어 있으면 {"@type": xxx, "value": yyy}와 같이 변환됩니다. 그렇지 않으면 값이 JSON 객체로 변환되고 "@type" 필드가 삽입되어 실제 데이터 타입을 나타냅니다.|
+|float, double|number|1.1, -10.0, 0, "NaN", "Infinity"|JSON 값은 숫자 또는 특수 문자열 값 "NaN", "Infinity" 및 "-Infinity" 중 하나입니다.<br>숫자 또는 문자열이 허용됩니다.<br>지수 표기법도 허용됩니다.<br>-0은 0과 동일한 것으로 간주됩니다.|
+|Any|object|{"@type": "url", "f": v, … }|Any에 특별한 JSON 매핑이 있는 값이 포함되어 있으면 {"@type": xxx, "value": yyy}와 같이 변환됩니다.<br>그렇지 않으면 값이 JSON 객체로 변환되고 "@type" 필드가 삽입되어 실제 데이터 타입을 나타냅니다.|
 |Timestamp|string|"1972-01-01T10:00:20.021Z"|RFC 3339(Z-정규화 적용 및 0, 3, 6, 9 개의 소수 자릿수 사용)를 사용합니다. "Z" 이외의 오프셋도 허용됩니다.|
-|Duration|string|"1.000340012s", "1s"|생성된 출력에는 필요한 정밀도에 따라 항상 0, 3, 6 또는 9개의 소수 자릿수와 접미사 "s"가 포함됩니다. 나노 초(nano-seconds) 정밀도를 사용하는한 어떤 소숫점 자릿수도 허용됩니다. "s" 접미사를 사용해야 합니다.|
+|Duration|string|"1.000340012s", "1s"|생성된 출력에는 필요한 정밀도에 따라 항상 0, 3, 6 또는 9개의 소수 자릿수와 접미사 "s"가 포함됩니다.<br>나노 초(nano-seconds) 정밀도를 사용하는한 어떤 소숫점 자릿수도 허용됩니다.<br>"s" 접미사를 사용해야 합니다.|
 |Struct|object|{ … }|모든 JSON 객체|
 |Wrapper types|various types|2, "2", "foo", true, "true", null, 0, …|데이터 변환 및 전송 중에 null이 허용되고 보존된다는 점을 제외하고 JSON에서 래핑된 기본 유형과 동일한 표현을 사용합니다.|
 |FieldMask|string|"f.fooBar,h"|See field_mask.proto.(이렇게만 적혀있고 링크도 없네요🥲)|
