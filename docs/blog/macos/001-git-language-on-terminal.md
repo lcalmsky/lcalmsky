@@ -1,6 +1,6 @@
 얼마 전 `zsh` 테마를 적용하고나니 `git` 명령어가 한글로 바뀌는 현상이 발생했습니다.
 
-![](https://raw.gitusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-macos-001-01.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-macos-001-01.png)
 
 (원래 맥은 기본으로 `apple git`을 사용하는데 `brew`나 다른 패키지 설치 툴을 이용해 `git`을 다시 설치하는 경우에도 이런 일이 발생할 수 있다고 합니다.)
 
@@ -38,7 +38,7 @@ brew edit git
 
 방법은 아주 간단합니다.
 
-`zsh` 설정을 열어서 `alias`를 하나 등록해주면 되는데 git이 입력될 때 언어 옵션을 같이 주는 방식입니다.
+`zsh` 설정을 열어서 `alias`를 하나 등록해주면 되는데 `git`이 입력될 때 언어 옵션을 같이 주는 방식입니다.
 
 먼저 `.zshrc` 파일을 열어서
 
@@ -60,6 +60,6 @@ alias git="LANG=en_US.UTF-8 git"
 
 그리고 다시 `git`을 입력해보면...
 
-![](https://raw.gitusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-macos-001-02.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-macos-001-02.png)
 
 정상적으로 영어로 출력되는 것을 확인할 수 있습니다. 🥳
