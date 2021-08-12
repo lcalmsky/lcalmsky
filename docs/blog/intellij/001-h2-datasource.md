@@ -83,6 +83,33 @@ public class Player {
 }
 ```
 
+```java
+package io.lcalmsky.inmemoryh2database.domain.entity;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Getter
+@ToString
+public class Team {
+    @Id
+    @GeneratedValue
+    @Column(name = "team_id")
+    private Long id;
+    private String name;
+    @OneToMany(mappedBy = "team")
+    @ToString.Exclude
+    private List<Player> players;
+}
+```
+
 여기까지 작성을 완료했으면 한 번 실행해볼까요? (실행 전에 `active profile`을 `local`로 설정해주는 것 잊지마세요!)
 
 ```text
