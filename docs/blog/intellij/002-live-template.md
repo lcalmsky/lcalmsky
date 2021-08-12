@@ -1,4 +1,5 @@
-`JPA`를 사용할 때 `Entity`의 필드가 `Enum`인 경우, 실제 코딩시에는 `Enum`의 `Constant`를 사용하지만 `DB`에 저장할 땐 문자열 또는 정수로 된 코드를 저장하는 경우가 있을 수 있습니다.
+`JPA`를 사용할 때 `Entity`의 필드가 `Enum`인 경우, 실제 코딩시에는 `Enum`의 `Constant`를 사용하지만 `DB`에 저장할 땐 문자열 또는 정수로 된 코드를 저장하는 경우가 있을 수
+있습니다.
 
 이럴 때 커스텀 `Converter`를 만들어 `AttributeConverter`를 구현하여 해결하곤합니다.
 
@@ -47,7 +48,7 @@ public enum Gender {
         }
     }
 
-    @Getter 
+    @Getter
     @JsonValue // (6)
     private final String value;
 
@@ -70,13 +71,16 @@ public enum Gender {
 
 하지만 개발을 하다보면 코드로 정의하여 주고 받는 경우가 매우 많고, 개발할 때 enum 등오로 정의해놓지 않으면 매우매우 불편한 상황들이 자주 연출되곤 합니다.
 
-예를 들어 `01`이란 코드가 `정상`, `02`란 코드가 `심사 필요`, `03`은 `차단`, `04`는 `다른 프로세스 수행`, `05`는 `심사 완료` 등 숫자만 보고는 알 수 없는 내용들을 매핑하여 규격에 포함시키는 경우가 비일비재하게 일어나는데요, 이런 경우 `enum`으로 매핑하면 헷갈리지 않고 보다 가독성있게 개발할 수 있고 유지보수도 용이하게 할 수 있습니다.
+예를 들어 `01`이란 코드가 `정상`, `02`란 코드가 `심사 필요`, `03`은 `차단`, `04`는 `다른 프로세스 수행`, `05`는 `심사 완료` 등 숫자만 보고는 알 수 없는 내용들을 매핑하여 규격에
+포함시키는 경우가 비일비재하게 일어나는데요, 이런 경우 `enum`으로 매핑하면 헷갈리지 않고 보다 가독성있게 개발할 수 있고 유지보수도 용이하게 할 수 있습니다.
 
-또한 객체지향적으로 `abstract` 메서드나 `interface`를 구현하도록하여 해당 `enum`의 `constant` 별로 같은 메서드를 호출해 각각의 성격에 맞는 작업을 하도록 설계하여 매 번 조건문을 추가하지 않게도 개발할 수 있습니다.
+또한 객체지향적으로 `abstract` 메서드나 `interface`를 구현하도록하여 해당 `enum`의 `constant` 별로 같은 메서드를 호출해 각각의 성격에 맞는 작업을 하도록 설계하여 매 번 조건문을
+추가하지 않게도 개발할 수 있습니다.
 
 따라서 허접한 예시와는 별개로 `enum`을 정의하여 사용하는 것은 매우 중요하고, 매 번 사용하는 보일러 플레이트 코드들을 간단히 작성할 수 있으면 더더욱 좋겠죠.
 
-위의 소스 코드를 예시로 들면, (1), (2), (3) 번이 보일러 플레이트 코드라고 볼 수 있습니다. (6)의 경우 필드의 타입이 `String`이 아닐 수도 있고 변수 이름이 `value`가 아닐 수 있어 공통 코드에서는 제외하였습니다.
+위의 소스 코드를 예시로 들면, (1), (2), (3) 번이 보일러 플레이트 코드라고 볼 수 있습니다. (6)의 경우 필드의 타입이 `String`이 아닐 수도 있고 변수 이름이 `value`가 아닐 수 있어 공통
+코드에서는 제외하였습니다.
 
 [이전 포스팅](https://jaime-note.tistory.com/47?category=849443)에서 `Entity`를 자동화시킨 것 처럼 보일러 플레이트 코드들을 간단히 작성할 수 있게 해보려고 합니다.
 
@@ -98,18 +102,18 @@ public enum Gender {
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-002-02.png)
 
 ```java
-private static final java.util.Map<$KEY$, $CLASS$> $FIELD$MAP = java.util.stream.Stream.of(values())
-        .collect(java.util.stream.Collectors.toMap($CLASS$::$GETTER$, java.util.function.Function.identity()));
+private static final java.util.Map<$KEY$, $CLASS$> $FIELD$MAP=java.util.stream.Stream.of(values())
+        .collect(java.util.stream.Collectors.toMap($CLASS$::$GETTER$,java.util.function.Function.identity()));
 
-public static $CLASS$ resolve$FROM$($KEY$ $PARAM$) {
-    return java.util.Optional.ofNullable($FIELD$MAP.get($PARAM$))
-            .orElseThrow(() -> new IllegalArgumentException("$DESC$"));
-}
+public static $CLASS$ resolve$FROM$($KEY$ $PARAM$){
+        return java.util.Optional.ofNullable($FIELD$MAP.get($PARAM$))
+        .orElseThrow(()->new IllegalArgumentException("$DESC$"));
+        }
 ```
 
 `Template text`에서 `$` 사이에 작성한 것들은 변수로 취급되어 가공하거나 기본 값을 줄 수 있습니다.
 
-이렇게 적고 `Edit variables`를 클릭하여 아래 캡쳐처럼 `CLASS`에만 `Expression`을 추가해줍니다. 
+이렇게 적고 `Edit variables`를 클릭하여 아래 캡쳐처럼 `CLASS`에만 `Expression`을 추가해줍니다.
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-002-03.png)
 
@@ -137,6 +141,7 @@ public static $CLASS$ resolve$FROM$($KEY$ $PARAM$) {
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-002-07.png)
 
 ```java
+
 @javax.persistence.Converter
 public static final class $CLASS$Converter implements javax.persistence.AttributeConverter<$CLASS$, $KEY$> {
     @Override
@@ -154,3 +159,5 @@ public static final class $CLASS$Converter implements javax.persistence.Attribut
 이제 `Live Template` 추가를 모두 마쳤는데요, 마지막으로 시연하는 모습을 보여드리면서 포스팅을 마치겠습니다. 👋
 
 (참고로 변수간 이동은 `TAB`을 누르면 되고 마지막 변수에서 `TAB`을 누르면 템플릿 작성 모드를 빠져나갑니다. 첨부한 영상에서는 `@JsonCreator` 등을 따로 추가하진 않았습니다.)
+
+[!["IntelliJ IDEA Live Template 시연"](http://img.youtube.com/vi/Qp8PXSacEsk/0.jpg)](http://www.youtube.com/watch?v=Qp8PXSacEsk "IntelliJ IDEA Live Template 시연")
