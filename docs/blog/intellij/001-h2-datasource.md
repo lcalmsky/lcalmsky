@@ -163,13 +163,13 @@ public class Team {
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-01.png)
 
-여러 가지 방법으로 `DataSource`를 추가할 수 있으나 가장 편리한 방법은 바로 `URL`을 복사하는 것 인데요, 위에 설정에 입력했던 URL 정보(spring.datasource.url=jdbc:h2:mem:testdb)를 복사한 뒤 `Database` 창에서 더하기 버튼 클릭 후 `Data Source from UR`L을 클릭한 뒤 `URL`을 입력합니다.  
+여러 가지 방법으로 `DataSource`를 추가할 수 있으나 가장 편리한 방법은 바로 `URL`을 복사하는 것 인데요, 위에 설정에 입력했던 URL 정보(spring.datasource.url=jdbc:h2:mem:testdb)를 복사한 뒤 `Database` 창에서 더하기 버튼 클릭 후 `Data Source from URL`을 클릭한 뒤 `URL`을 입력합니다.  
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-02.png)
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-03.png)
 
-그럼 다음과 같은 창이 노출되는데 `username`만 설정에 적용한 대로 `sa`로 입력해주시면 됩니다.
+그럼 다음과 같은 창이 나타나는데 `username`만 설정에 적용한 대로 `sa`로 입력해주시면 됩니다.
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-04.png)
 
@@ -181,11 +181,11 @@ public class Team {
 
 이 `DataSource`를 활용할 수 있는 방법은 스프링 부트 애플리케이션을 실행했을 때 로그로 출력되는 테이블 추가하는 `SQL`문을 `SQL Console`에 입력하여 다시 확인해보는 정도가 될 거 같습니다.
 
-결과적으로 정리하자면 원격 접속(localhost로)이나 file DB를 사용하지 않는 이상 DataSource로 지정하더라도 생성한 테이블이나 데이터들이 남지 않게 됩니다.
+결과적으로 정리하자면 `remote`나 `file` DB를 사용하지 않는 이상 `DataSource`로 지정하더라도 생성한 테이블이나 데이터들이 남지 않게 됩니다.
 
 ---
 
-그럼 로컬에 H2 Database를 따로 띄우지 않더라도 file을 이용한 방법으로 다시 한 번 만들어보겠습니다. (여기까지 작성한 게 아까워서라도 뭐라도 건지고자..)
+그럼 로컬에 `H2 Database`를 따로 띄우지 않더라도 `file`을 이용한 방법으로 다시 한 번 만들어보겠습니다. (여기까지 작성한 게 아까워서라도 뭐라도 건지고자..)
 
 먼저 설정을 파일을 볼 수 있도록 바꿔줍니다.
 
@@ -209,7 +209,7 @@ spring:
 
 캡쳐를 보시면 아시겠지만 `connection type`이 `embedded`로 바뀌었습니다. `username`만 따로 세팅 후 확인을 눌러 `DataSource` 생성을 마친 뒤 다시 애플리케이션을 실행해보겠습니다.
 
-애플리케이션을 실행한 뒤 DataSource를 보면 아무런 변화가 없는데요, 뭐가 잘못 입력됐나 싶어 Data Source Properties를 다시 확인하면서 Test Connection을 확인해보니..
+애플리케이션을 실행한 뒤 `DataSource`를 보면 아무런 변화가 없는데요, 뭐가 잘못 입력됐나 싶어 `Data Source Properties`를 다시 열어 `Test Connection`을 확인해보니..
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-07.png)
 
@@ -222,9 +222,9 @@ The file is locked: nio:/Users/jaime/git-repo/in-memory-h2-database/testdb.mv.db
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-08.png)
 
-매 번 이렇게 사용할 순 없기에 파일에 lock 모드를 사용하지 않게 바꿔주기만 하면 모든 게 해결될 거 같습니다.
+매 번 이렇게 사용할 순 없기에 파일에 `lock 모드`를 사용하지 않게 바꿔주기만 하면 모든 게 해결될 거 같습니다.
 
-application-local.yml 파일과 Data Source Properties의 URL을 모두 아래 처럼 변경해줍니다.
+`application-local.yml` 파일과 `Data Source Properties`의 `URL`을 모두 아래 처럼 변경해줍니다.
 
 * application-local.yml
 ```yaml
@@ -240,16 +240,16 @@ spring:
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-10.png)
 
-이제 동기화가 되었으니 h2-console을 따로 접속할 필요 없이 IntelliJ IDEA 내에서 편리하게 DB를 확인할 수 있겠네요!
+이제 동기화가 되었으니 `h2-console`을 따로 접속할 필요 없이 `IntelliJ IDEA` 내에서 편리하게 `DB`를 확인할 수 있겠네요!
 
 ---
 
-추가로 DataSource가 정상적으로 추가 및 연결되었다면 ER Diagram을 확인할 수 있는데요(사실 이 기능을 사용하려고 여태까지 이 짓들을..),
+추가로 `DataSource`가 정상적으로 추가 및 연결되었다면 `ER Diagram`을 확인할 수 있는데요(사실 이 기능을 사용하려고 여태까지 이 짓들을..),
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-11.png)
 
-캡쳐에 나온대로 사용할 Database 내에 tables 디렉토리(또는 직접 테이블을 선택해도 됨)를 우클릭 후 Diagrams - Show Visualization을 선택하면
+캡쳐에 나온대로 사용할 `Database` 내에 `tables` 디렉토리(또는 직접 테이블을 선택해도 됨)를 우클릭 후 `Diagrams` - `Show Visualization`을 선택하면
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-12.png)
 
-이렇게 ER Diagram을 확인할 수 있습니다. 👏
+이렇게 `ER Diagram`을 확인할 수 있습니다. 👏
