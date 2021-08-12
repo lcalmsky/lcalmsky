@@ -35,7 +35,7 @@ dependencies {
 ```yaml
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb # DB 접슥 URL
+    url: jdbc:h2:mem:testdb # DB 접속 URL
     username: sa # DB 접속 username
     password: # DB 접속 password, 없음
     driver-class-name: org.h2.Driver # DB 접속 드라이버
@@ -185,7 +185,7 @@ public class Team {
 
 ---
 
-그럼 로컬에 `H2 Database`를 따로 띄우지 않더라도 `file`을 이용한 방법으로 다시 한 번 만들어보겠습니다. (여기까지 작성한 게 아까워서라도 뭐라도 건지고자..)
+그럼 로컬에 `H2 Database`를 따로 띄우지 않고 `file`을 이용한 방법으로 다시 한 번 만들어보겠습니다. (여기까지 작성한 게 아까워서라도 뭐라도 건지고자..)
 
 먼저 설정을 파일을 볼 수 있도록 바꿔줍니다.
 
@@ -218,7 +218,9 @@ Database may be already in use: null
 The file is locked: nio:/Users/jaime/git-repo/in-memory-h2-database/testdb.mv.db
 ```
 
-애플리케이션 프로세스를 중지시키고 다시 확인해보면 테이블 두 개가 생성된 걸 확인할 수 있습니다.
+이런 에러 문구가 노출됐는데요, 데이터베이스가 이미 사용중이고 파일에 lock이 걸려있다는 내용입니다.
+
+이미 애플리케이션을 실행중이었기에 애플리케이션 프로세스를 중지시키고 다시 확인해보면 정상적으로 테이블 두 개가 생성된 걸 확인할 수 있습니다.
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/image/docs-blog-intellij-001-08.png)
 
