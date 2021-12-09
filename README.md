@@ -53,6 +53,10 @@
 <img alt="Eclipse" src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse%20ide&logoColor=white"/>
 </p>
 
+### LeetCode
+
+[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky&theme=dark)](https://github.com/lcalmsky/leetcode-stats)
+
 [comment]: <> (<img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/>)
 [comment]: <> (<img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>)
 [comment]: <> (<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>)
