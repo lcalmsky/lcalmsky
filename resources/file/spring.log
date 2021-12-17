@@ -1,0 +1,43 @@
+2021-12-18 02:34:47.953  INFO 46077 --- [restartedMain] io.lcalmsky.app.App                      : Starting App using Java 11.0.11 on Jaime-iMac.local with PID 46077 (/Users/jaime/git-repo/spring-boot-app/out/production/classes started by jaime in /Users/jaime/git-repo/spring-boot-app)
+2021-12-18 02:34:47.957  INFO 46077 --- [restartedMain] io.lcalmsky.app.App                      : The following profiles are active: local
+2021-12-18 02:34:48.018  INFO 46077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-18 02:34:48.019  INFO 46077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-18 02:34:49.148  INFO 46077 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-18 02:34:49.205  INFO 46077 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2021-12-18 02:34:49.850  INFO 46077 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-18 02:34:49.857  INFO 46077 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-18 02:34:49.857  INFO 46077 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-12-18 02:34:49.918  INFO 46077 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-18 02:34:49.918  INFO 46077 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+2021-12-18 02:34:49.995  INFO 46077 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-18 02:34:52.348  INFO 46077 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-18 02:34:52.353  INFO 46077 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./testdb'
+2021-12-18 02:34:52.486  INFO 46077 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-18 02:34:52.509  INFO 46077 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-18 02:34:52.578  INFO 46077 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-18 02:34:52.637  INFO 46077 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-18 02:34:53.137  INFO 46077 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-18 02:34:53.142  INFO 46077 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-18 02:34:53.575  WARN 46077 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-18 02:34:53.708  INFO 46077 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9c32255b-378b-426f-b121-a707a723c2c2
+
+2021-12-18 02:34:53.781  INFO 46077 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-18 02:34:53.947  INFO 46077 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-18 02:34:53.965  INFO 46077 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.boot.autoconfigure.security.servlet.StaticResourceRequest$StaticResourceRequestMatcher@33f240e4 with []
+2021-12-18 02:34:53.966  INFO 46077 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Mvc [pattern='/node_modules/**'] with []
+2021-12-18 02:34:53.966  INFO 46077 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Mvc [pattern='/images/**'] with []
+2021-12-18 02:34:53.966  INFO 46077 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/h2-console/**'] with []
+2021-12-18 02:34:53.991  INFO 46077 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6117e470, org.springframework.security.web.context.SecurityContextPersistenceFilter@12046c24, org.springframework.security.web.header.HeaderWriterFilter@11aa1ef1, org.springframework.security.web.csrf.CsrfFilter@2e02b351, org.springframework.security.web.authentication.logout.LogoutFilter@7a92e469, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70debf5b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b4e2362, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@427b3465, org.springframework.security.web.session.SessionManagementFilter@77e75116, org.springframework.security.web.access.ExceptionTranslationFilter@14c7b847, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2406e5cf]
+2021-12-18 02:34:54.289  INFO 46077 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-18 02:34:54.330  INFO 46077 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-18 02:34:54.357  INFO 46077 --- [restartedMain] io.lcalmsky.app.App                      : Started App in 7.003 seconds (JVM running for 7.844)
+2021-12-18 02:35:00.566  INFO 46077 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-18 02:35:00.572  INFO 46077 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-18 02:35:00.881  INFO 46077 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+1
+2
+3
+4
+5
