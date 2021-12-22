@@ -353,7 +353,7 @@ e3f8a602-b62e-4115-bbd6-0702cdb88afc;Thomas;11
 
 다시 명령어를 실행해보면
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] uniq uniq.txt
+> uniq uniq.txt
 afa9061f-cc05-4470-bc28-e77b9a58b517;James;10
 122edbb8-bcc0-46d8-8f0c-3fa7b54369e9;Robert;7
 1a72c571-994f-4e2d-bfc0-26927aaa3164;John;9
@@ -375,7 +375,7 @@ c10c3715-ee97-42e8-b906-6d50558378f4;Charles;7
 #### -i
 
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] uniq -i uniq.txt
+> uniq -i uniq.txt
 afa9061f-cc05-4470-bc28-e77b9a58b517;James;10
 122edbb8-bcc0-46d8-8f0c-3fa7b54369e9;Robert;7
 1a72c571-994f-4e2d-bfc0-26927aaa3164;John;9
@@ -396,7 +396,7 @@ richard가 제거된 것을 확인할 수 있습니다.
 #### uniq with sort
 
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] sort -t ";" -k 2,2 -f uniq.txt | uniq -i
+> sort -t ";" -k 2,2 -f uniq.txt | uniq -i
 c10c3715-ee97-42e8-b906-6d50558378f4;Charles;7
 23493703-dfa7-433f-abd3-dda0b8ded865;David;13
 afa9061f-cc05-4470-bc28-e77b9a58b517;James;10
@@ -414,7 +414,7 @@ sort 옵션을 이용해 이름에 해당하는 컬럼 기준으로 대소문자
 반대로 중복된 데이터만 출력해보면
 
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] sort -t ";" -k 2,2 -f uniq.txt | uniq -d
+> sort -t ";" -k 2,2 -f uniq.txt | uniq -d
 afa9061f-cc05-4470-bc28-e77b9a58b517;James;10
 1a72c571-994f-4e2d-bfc0-26927aaa3164;John;9
 9878141a-7dbb-42ce-a198-1a60b97a5fee;Richard;16
@@ -427,7 +427,7 @@ e3f8a602-b62e-4115-bbd6-0702cdb88afc;Thomas;11
 마지막으로 중복되지 않은 값만 확인해보면,
 
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] sort -t ";" -k 2,2 -f uniq.txt | uniq -u
+> sort -t ";" -k 2,2 -f uniq.txt | uniq -u
 c10c3715-ee97-42e8-b906-6d50558378f4;Charles;7
 23493703-dfa7-433f-abd3-dda0b8ded865;David;13
 1ac46560-3642-42bb-81af-ab0d882a7563;Joseph;11
@@ -439,7 +439,7 @@ e794eda6-b5c6-4ea8-8f2a-7cb877d4d5d6;Michael;17
 이렇게 중복이 존재하는 행은 아예 삭제된 것을 확인할 수 있고, 여기에 대소문자 무시 옵션까지 추가하면,
 
 ```shell
- ~/git-repo/lcalmsky/resources/file/ [feature/2+*] sort -t ";" -k 2,2 -f uniq.txt | uniq -u -i
+> sort -t ";" -k 2,2 -f uniq.txt | uniq -u -i
 c10c3715-ee97-42e8-b906-6d50558378f4;Charles;7
 23493703-dfa7-433f-abd3-dda0b8ded865;David;13
 1ac46560-3642-42bb-81af-ab0d882a7563;Joseph;11
