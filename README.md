@@ -3,7 +3,7 @@
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/images/jaimes-github-logo-poiret-one-regular.gif)
 
 ### Hi there 👋
-- :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
+- :smiley: I'm a developer who enjoy sharing and communicating what I've learned.
 - 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/11st-logo.png) in charge of ![SK pay](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/skpay-logo.png) `FDS`, `AML` and `MyData` as a Java back-end developer.
 
 ### GitHub stats
