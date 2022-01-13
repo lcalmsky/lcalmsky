@@ -24,42 +24,71 @@
 [//]: <> "![Git](https://img.shields.io/badge/-Git-black?logo=git&style=social)"
 [//]: <> "![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)"
 
-### Tech Stack
-<p align="center">
-<img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>
-<img alt="Gradle" src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white"/>
-<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache%20maven&logoColor=white"/>
-<img alt="Groovy" src="https://img.shields.io/badge/groovy-4298B8?style=for-the-badge&logo=apache%20groovy&logoColor=white"/>
-<img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white"/>
-<img alt="MySQL" src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-<img alt="Oracle" src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
-<img alt="MariaDB" src="https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>
-<img alt="Hibernate" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white"/>
-<img alt="Redis" src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
-<img alt="JUnit5" src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white"/>
-<img alt="Swagger" src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white"/>
-<img alt="Asciidoctor" src="https://img.shields.io/badge/asciidoctor-E40046?style=for-the-badge&logo=Asciidoctor&logoColor=white"/>
-<img alt="Docker" src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-<img alt="Jenkins" src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
-<img alt="Ansible" src="https://img.shields.io/badge/ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white"/>
-<img alt="Github" src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"/>
-<img alt="Gitlab" src="https://img.shields.io/badge/gitlab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white"/>
-<img alt="Bitbucket" src="https://img.shields.io/badge/bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white"/>
-<img alt="Confluence" src="https://img.shields.io/badge/confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white"/>
-<img alt="Jira" src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
-<img alt="Slack" src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
-<img alt="AWS" src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon%20aws&logoColor=white"/>
-<img alt="IntelliJ" src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellij%20idea&logoColor=white"/>
-<img alt="Eclipse" src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse%20ide&logoColor=white"/>
-</p>
+[comment]: <> (### Tech Stack)
+
+[comment]: <> (<p align="center">)
+
+[comment]: <> (<img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>)
+
+[comment]: <> (<img alt="Gradle" src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white"/>)
+
+[comment]: <> (<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache%20maven&logoColor=white"/>)
+
+[comment]: <> (<img alt="Groovy" src="https://img.shields.io/badge/groovy-4298B8?style=for-the-badge&logo=apache%20groovy&logoColor=white"/>)
+
+[comment]: <> (<img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white"/>)
+
+[comment]: <> (<img alt="MySQL" src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>)
+
+[comment]: <> (<img alt="Oracle" src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>)
+
+[comment]: <> (<img alt="MariaDB" src="https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>)
+
+[comment]: <> (<img alt="Hibernate" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white"/>)
+
+[comment]: <> (<img alt="Redis" src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>)
+
+[comment]: <> (<img alt="JUnit5" src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white"/>)
+
+[comment]: <> (<img alt="Swagger" src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white"/>)
+
+[comment]: <> (<img alt="Asciidoctor" src="https://img.shields.io/badge/asciidoctor-E40046?style=for-the-badge&logo=Asciidoctor&logoColor=white"/>)
+
+[comment]: <> (<img alt="Docker" src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>)
+
+[comment]: <> (<img alt="Jenkins" src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>)
+
+[comment]: <> (<img alt="Ansible" src="https://img.shields.io/badge/ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white"/>)
+
+[comment]: <> (<img alt="Github" src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"/>)
+
+[comment]: <> (<img alt="Gitlab" src="https://img.shields.io/badge/gitlab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white"/>)
+
+[comment]: <> (<img alt="Bitbucket" src="https://img.shields.io/badge/bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white"/>)
+
+[comment]: <> (<img alt="Confluence" src="https://img.shields.io/badge/confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white"/>)
+
+[comment]: <> (<img alt="Jira" src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>)
+
+[comment]: <> (<img alt="Slack" src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>)
+
+[comment]: <> (<img alt="AWS" src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon%20aws&logoColor=white"/>)
+
+[comment]: <> (<img alt="IntelliJ" src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellij%20idea&logoColor=white"/>)
+
+[comment]: <> (<img alt="Eclipse" src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse%20ide&logoColor=white"/>)
+
+[comment]: <> (</p>)
+
+[comment]: <> (<img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/>)
+
+[comment]: <> (<img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>)
+
+[comment]: <> (<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>)
 
 ### LeetCode
 
-[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky&theme=dark)](https://github.com/lcalmsky/leetcode-stats)
-
-[comment]: <> (<img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/>)
-[comment]: <> (<img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>)
-[comment]: <> (<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>)
+[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky)](https://github.com/lcalmsky/leetcode-stats)
 
 ### Links
 * [resume](https://lcalmsky.github.io/resume/)
