@@ -7,7 +7,7 @@
 - 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/11st-logo.png) in charge of ![SK pay](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/skpay-logo.png) `FDS`, `AML` and `MyData` as a Java back-end developer.
 
 ### GitHub Stats
-[![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
+[![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
 
 
 ### GitHub Trophies
