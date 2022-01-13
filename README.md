@@ -6,17 +6,18 @@
 - :smiley: I'm a developer who enjoy sharing and communicating what I've learned.
 - 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/11st-logo.png) in charge of ![SK pay](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/skpay-logo.png) `FDS`, `AML` and `MyData` as a Java back-end developer.
 
-### GitHub stats
+### GitHub Stats
 [![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&theme=highcontrast&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
+
+
+### GitHub Trophies
+[![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
+
 
 ### Top Languages
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)](https://github.com/lcalmksy)
 
 [//]: <> "[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky)](https://github.com/lcalmsky)"
-
-### GitHub Trophies
-[![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
-
 
 [//]: <> "![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)"
 [//]: <> "![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)"
