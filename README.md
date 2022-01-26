@@ -2,20 +2,34 @@
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/images/jaimes-github-logo-poiret-one-regular.gif)
 
-### Hi there 👋
+## Hi there 👋
 - :smiley: I'm a developer who enjoy sharing and communicating what I've learned.
 - 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/11st-logo.png) in charge of ![SK pay](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/skpay-logo.png) `FDS`, `AML` and `MyData` as a Java back-end developer.
 
-### GitHub Stats
-[![lcalmsky's GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
+## GitHub Stats
+
+<div align="center">
+
+[![lcalmsky</div>'s GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
+
+</div>
 
 
-### GitHub Trophies
+## GitHub Trophies
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
 
+## Top Languages
 
-### Top Languages
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)](https://github.com/lcalmksy)
+
+## LeetCode
+
+[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky)](https://github.com/lcalmsky/leetcode-stats)
+
+## Links
+* [resume](https://lcalmsky.github.io/resume/)
+* [blog](https://jaime-note.tistory.com/)
 
 [//]: <> "[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky)](https://github.com/lcalmsky)"
 
@@ -86,11 +100,3 @@
 [comment]: <> (<img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>)
 
 [comment]: <> (<img alt="Azure" src="https://img.shields.io/badge/azure-0078D4?style=for-the-badge&logo=microsoft%20azure&logoColor=white"/>)
-
-### LeetCode
-
-[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky)](https://github.com/lcalmsky/leetcode-stats)
-
-### Links
-* [resume](https://lcalmsky.github.io/resume/)
-* [blog](https://jaime-note.tistory.com/)
