@@ -10,22 +10,26 @@
 
 <div align="center">
 
-[![lcalmsky</div>'s GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&count_private=true&show_icons=true&include_all_commits=true)](https://github.com/lcalmsky)
+[![lcalmsky</div>'s GitHub stats](https://github-readme-stats.vercel.app/api?username=lcalmsky&count_private=true&show_icons=true&include_all_commits=true&theme=merko)](https://github.com/lcalmsky)
 
 </div>
 
 
 ## GitHub Trophies
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky)](https://github.com/lcalmsky)
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=lcalmsky&row=2&column=4&theme=juicyfresh&margin-w=15&margin-h=15)](https://github.com/lcalmsky)
+
+</div>
 
 ## Top Languages
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss)](https://github.com/lcalmksy)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss&theme=merko)](https://github.com/lcalmksy)
 
 ## LeetCode
 
-[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky)](https://github.com/lcalmsky/leetcode-stats)
+[![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky&theme=dark)](https://github.com/lcalmsky/leetcode-stats)
 
 ## Links
 * [resume](https://lcalmsky.github.io/resume/)
