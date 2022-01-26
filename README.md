@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/user/e6a7179b-a66b-4b62-9410-7ef03828b4b1.svg)](https://wakatime.com/@e6a7179b-a66b-4b62-9410-7ef03828b4b1)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flcalmsky%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://github.com/lcalmksy)
 
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/images/jaimes-github-logo-poiret-one-regular.gif)
@@ -31,6 +32,14 @@
 
 </div>
 
+## Time Stats
+
+<div align="center">
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&theme=onedark)](https://github.com/lcalmsky)
+
+</div>
+
 ## LeetCode
 
 <div align="center">
@@ -43,7 +52,6 @@
 * [resume](https://lcalmsky.github.io/resume/)
 * [blog](https://jaime-note.tistory.com/)
 
-[//]: <> "[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky)](https://github.com/lcalmsky)"
 
 [//]: <> "![Java](https://img.shields.io/badge/-Java-black?logo=java&style=social)"
 [//]: <> "![Spring](https://img.shields.io/badge/-Spring%20Framework-black?logo=spring&style=social)"
