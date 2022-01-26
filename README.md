@@ -25,11 +25,19 @@
 
 ## Top Languages
 
+<div align="center">
+
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=lcalmsky&layout=compact&hide=javascript,html,css,scss&theme=merko)](https://github.com/lcalmksy)
+
+</div>
 
 ## LeetCode
 
+<div align="center">
+
 [![lcalmsky's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=lcalmsky&theme=dark)](https://github.com/lcalmsky/leetcode-stats)
+
+</div>
 
 ## Links
 * [resume](https://lcalmsky.github.io/resume/)
