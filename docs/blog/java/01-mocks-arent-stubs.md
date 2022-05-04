@@ -104,6 +104,96 @@ public class OrderInteractionTester extends MockObjectTestCase {
 
 또 다른 점은 `withAnyArguments`를 사용하여 기대에 대한 제약을 완화하였다는 것입니다. 그 이유는 첫 번째 테스트에서 번호가 `Warehouse`로 전달되었는지 확인하므로 두 번째 테스트에서는 해당 사항을 반복할 필요가 없기 때문입니다. 나중에 순서의 논리를 변경해야 하는 경우 하나의 테스트만 실패하므로 테스트를 마이그레이션하는 수고를 덜 수 있습니다.
 
-### EasyMock 사용
+## Mock과 Stub의 차이
 
+처음 도입되었을 때 많은 사람들이 `Stub`을 사용하는 일반적인 테스트 개념과 `Mock` 객체를 쉽게 혼동했습니다. 현재는 예전보다는 차이점을 이해하고 있는 사람들이 많아졌습니다. 그러나 `Mock`을 사용하는 방식을 완전히 이해하려면 `Mock`과 다른 종류의 `Test Double`을 이해하는 것이 중요합니다.
+
+> Test Double은 xUnit Test Patterns의 저자인 제라드 메스자로스가 만든 용어로 테스트를 진행하기 어려운 경우 이를 대신해 테스트를 진행할 수 있도록 만들어주는 객체를 말합니다.  
+> 단어 자체의 뜻은 '대역'에 가깝고 스턴트맨과 유사한 의미를 가집니다.
+
+테스트를 수행할 때 한 번에 소프트웨어의 한 요소에 초점을 맞추게 되므로 일반적인 용어는 `단위 테스트(Unit Test)`입니다. 문제는 하나의 유닛을 테스트하기 위해서는 종종 다른 유닛들이 필요하다는 것-이 예시에서는 `Warehouse`-입니다.
+
+위에서 보여드린 두 가지 테스트 스타일에서 첫 번째 경우는 실제 `Warehouse` 객체를 사용하고 두 번째 경우는 `Mock Warehouse` 객체를 사용합니다. `Mock` 객체를 사용하지 않고도 실제 `Warehouse` 객체를 대신하여 이와 같이 테스트에 사용되는 다른 형태의 객체가 있습니다.
+
+이것을 정의하는 단어는 `Stub`, `Mock`, `Fake`, `Dummy` 처럼 매우 여러 가지가 있습니다. 이 문서에서는 `Gerard Meszaros` 책의 어휘를 따를 것입니다.  
+
+Meszaros는 테스트 목적으로 실제 객체 대신 사용되는 모든 종류의 가상 객체에 대한 일반 용어로 `Test Double`을 사용합니다. Meszaros는 5가지 종류의 `Test Double`을 정의하였습니다.
+
+* `Dummy` 객체는 전달되지만 실제로 사용되지는 않습니다. 일반적으로 매개변수 목록을 채우는 데만 사용됩니다.
+* `Fake` 객체는 실제로 작동하는 구현을 가지고 있지만 일반적으로 프로덕션에는 적합하지 않은 방식을 취합니다. (메모리 기반 데이터베이스가 좋은 예시)
+* `Stub`은 테스트 중에 만들어진 호출에 미리 준비된 답변을 제공하고 일반적으로 테스트를 위해 프로그래밍된 것 외에는 전혀 응답하지 않습니다.
+* `Spy`는 그들이 어떻게 호출되었는지에 따라 일부 정보를 기록하는 `Stub` 입니다.
+* `Mock`은 호출될 것으로 예상되는 사양을 형성하는 기대값으로 미리 프로그래밍 된 객체입니다.
+
+이 중에서 `Mock`만 행동 검증을 수행합니다. 다른 것들은 상태 검증에 사용될 수 있습니다. `Mock`은 실제로 `SUT`가 `Collaborator`와 커뮤니케이션한다고 믿도록 해야하기 때문에 실행단계에서 다른 `Test Double`처럼 사용되지만 설정 및 검증단계에서 차이가 있습니다.
+
+`Test Double`을 더 알아보기 위해 예제를 확장하였습니다. 많은 사람들은 실제 객체가 작업하기 불편한 경우에만 `Test Double`을 사용합니다. `Test Double`을 위한 더 일반적인 테스트 케이스로 Order를 채우지 못한 경우 이메일 메시지를 보내는 것을 예로 들 수 있습니다. 문제는 테스트 중에 고객에게 실제 이메일 메시지를 보내고 싶지 않다는 것입니다. 그래서 우리는 우리가 직접 제어하고 조작할 수 있는 이메일 시스템의 `Test Double`을 만들어야 합니다. 
+
+여기서 우리는 `Mock과` `Stub`의 차이점을 확인할 수 있습니다. 메일 동작에 대한 테스트를 작성하는 중이라면 아래와 같은 간단한 `Stub`을 작성할 수 있습니다.
+
+```java
+public interface MailService {
+
+  public void send(Message msg);
+}
+
+public class MailServiceStub implements MailService {
+
+  private List<Message> messages = new ArrayList<Message>();
+
+  public void send(Message msg) {
+    messages.add(msg);
+  }
+
+  public int numberSent() {
+    return messages.size();
+  }
+}        
+```
+
+그리고 우리는 `Stub`을 이용해 다음과 같이 상태 검증을 할 수 있습니다.
+
+```java
+class OrderStateTester {
+
+  public void testOrderSendsMailIfUnfilled() {
+    Order order = new Order(TALISKER, 51);
+    MailServiceStub mailer = new MailServiceStub();
+    order.setMailer(mailer);
+    order.fill(warehouse);
+    assertEquals(1, mailer.numberSent());
+  }
+}
+```
+
+물론 이 테스트는 메시지가 전송되었다는 매우 간단한 테스트입니다. 올바른 사람에게 올바른 내용으로 전송되었는지 테스트하지 않았지만 `Stub` 사용의 요점을 설명하기 위한 것입니다.
+
+`Mock`을 사용하면 이 테스트가 상당히 달라집니다.
+
+```java
+class OrderInteractionTester {
+
+  public void testOrderSendsMailIfUnfilled() {
+    Order order = new Order(TALISKER, 51);
+    Mock warehouse = mock(Warehouse.class);
+    Mock mailer = mock(MailService.class);
+    order.setMailer((MailService) mailer.proxy());
+
+    mailer.expects(once())
+        .method("send");
+    warehouse.expects(once())
+        .method("hasInventory")
+        .withAnyArguments()
+        .will(returnValue(false));
+
+    order.fill((Warehouse) warehouse.proxy());
+  }
+}
+```
+
+두 가지 경우 모두 실제 메일 서비스 대신 `Test Double`을 사용하고 있습니다. `Stub`은 상태 검증을, `Mock`은 행동 검증을 사용한다는 차이점이 있습니다.
+
+`Stub`에서 상태 확인을 사용하려면 확인을 돕기 위해 `Stub`에서 몇 가지 추가 메서드를 만들어야 합니다. 결과적으로 `Stub`은 `MailService`를 구현하지만 추가적인 테스트 메서드를 구현해야합니다.
+
+`Mock` 객체는 항상 동작 검증을 사용하며 `Stub`은 어떤 방식으로도 사용할 수 있습니다. Meszaros는 `Stub`을 행동 검증을 위해 사용되는 `Test Spy`라고 언급합니다. 차이점은 얼마나 정확하게 `Test Double`이 실행되고 검증되는지에 있습니다.
 
