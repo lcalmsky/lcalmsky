@@ -1,4 +1,4 @@
-`github markdown`에서 수학 표현식 렌더링을 제공합니다. (2022년 5월 19일부터!)
+`GitHub markdown`에서 수학 표현식 렌더링을 제공합니다. (2022년 5월 19일부터!)
 
 [`LaTeX` 문법](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95)으로 `inline` 또는 `code block` 형태로 작성할 수 있습니다.
 
@@ -33,9 +33,16 @@ This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
 이렇게 표시됩니다.
 
-> 현재 `github markdown`에서만 지원하는 기능이므로 블로그에서 제공하는 `markdown`으로는 수학표현식을 사용할 수 없습니다.
+> 현재 `GitHub markdown`에서만 지원하는 기능이므로 블로그에서 제공하는 `markdown`으로는 수학표현식을 사용할 수 없습니다.
 > 
 > 알고리즘을 풀 때 수학표현식을 작성해야 할 경우가 많이 있는데, 그 때 사용하면 유용할 거 같습니다.
-> 
-> 그리고 `github`에서 렌더링한 이미지를 링크로 표현해주는 방식이기 때문에 `tistory`로 옮길 때 렌더링 된 이미지 주소를 복사해서 `markdown` 링크 형식으로 표현할 수 있을 거 같습니다.
 
+### 렌더링 방식
+
+`GitHub`의 수학 렌더링 기능은 `JavaScript`기반 디스플레이 엔진 오픈소스인 `MathJax`를 사용합니다. `MathJax`는 광범위한 `LaTeX` 매크로와 유용한 접근성 확장을 지원합니다.
+
+렌더링 된 결과는 CHTML 또는 SVG 형식을 지원합니다. 즉, 위의 수식을 LaTex 문법으로 작성했을 경우 HTML 또는 SVG 형태로 변경됩니다.
+
+수식에서 우클릭하면 아래와 같은 메뉴들을 확인할 수 있습니다.
+
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/docs/blog/etc/example.png)
