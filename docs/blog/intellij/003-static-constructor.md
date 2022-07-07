@@ -115,13 +115,16 @@ public class Member {
 
 `name`과 `email`만 선택하고 `OK`를 눌렀을 때 위와 같은 `public` 생성자가 생성되었습니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/image/docs-blog-intellij-003-03.png)
-
 생성자 위치로 커서를 옮긴 뒤에 `⌃ T`를 눌러 `Refactor This` 컨텍스트를 띄웁니다. (윈도우 기준 `Ctrl+Alt+Shift+T`)
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/image/docs-blog-intellij-003-04.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/image/docs-blog-intellij-003-03.png)
 
 메뉴 하단에 보면 `Replace Constructor with Factory Method...` 라는 메뉴가 있고 단축키는 `0`번으로 나와있습니다.
+
+> IntelliJ 버전(라이선스)에 따라 `⌥ ⏎` 를 눌러야 해당 메뉴가 나타날 수도 있습니다.  
+> (윈도우 기준 `Alt + Enter`)
+
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/image/docs-blog-intellij-003-04.png)
 
 해당 메뉴에 진입하면, 메서드 이름만 입력하면 되고 `static` 생성자를 생성해줌과 동시에 기존 생성자를 `private`으로 바꿔줍니다!
 
