@@ -5,7 +5,7 @@
 
 ## Hi there 👋
 - :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
-- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) in charge of tax refund.
+- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) for increasing user retention rate.
 
 ## GitHub Stats
 
