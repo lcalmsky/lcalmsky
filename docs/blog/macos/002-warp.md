@@ -26,9 +26,9 @@ UI가 정말 이쁘고 기능이 다양합니다.
 
 하지만 `warp`는 기본이 `zsh`이고 테마도 이쁜 걸로 적용되어 있고, 설정 파일 수정이 아닌 설정 UI를 통해 수정 가능합니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-01.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-01.png)
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-02.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-02.png)
 
 ## 기능
 
@@ -38,22 +38,22 @@ UI가 정말 이쁘고 기능이 다양합니다.
 
 파일을 복사한다든지, 열려있는 포트를 찾는다는지 등을 검색하면 해당 기능을 수행할 수 있는 `command`를 추천해줍니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-03.png)
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-04.png)
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-05.png)
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-06.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-03.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-04.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-05.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-06.png)
 
 ### Command Palette (⌘ + p)
 
 제공하는 기능과 해당 기능의 단축키를 한 눈에 볼 수 있습니다. IntelliJ의 Action 검색(⌘ + ⇧ + A)과 비슷하다고 생각하시면 됩니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-07.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-07.png)
 
 ### Search Command History (⌃ + R)
 
 히스토리 검색 기능을 UI로 제공합니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-08.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-08.png)
 
 ### Search Workflows
 
@@ -61,7 +61,7 @@ UI가 정말 이쁘고 기능이 다양합니다.
 
 워크플로우는 어떤 업무를 하기 위한 명령어들을 모아놓은 것을 말합니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-09.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-09.png)
 
 ### Workflows
 
@@ -69,15 +69,15 @@ UI가 정말 이쁘고 기능이 다양합니다.
 
 AES256을 이용해 RSA private 키를 생성하는 워크플로우를 실행하면 아래 처럼 명령어를 생성해주고 편리하게 파라미터를 입력할 수 있게 해줍니다. 
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-10.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-10.png)
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-11.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-11.png)
 
 ### ETC
 
 이 밖에도 git, gradle, aws 등 자주 사용하는 명령어들에 대한 힌트가 제공되고 힌트가 여러 개일 경우 선택할 수 있는 UI가 제공됩니다.
 
-![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/resources/images/docs-blog-macos-002-12.png)
+![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/images/docs-blog-macos-002-12.png)
 
 ## 단점
 
