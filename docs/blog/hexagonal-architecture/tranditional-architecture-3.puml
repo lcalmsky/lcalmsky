@@ -1,0 +1,19 @@
+@startuml
+
+package "Domain" {
+  [Service]
+}
+package "Persistence" {
+  [Helper]
+  [Repository]
+  [Utility]
+}
+
+[Service] -d-> [Helper]
+[Service] -d-> [Repository]
+[Service] -d-> [Utility]
+[Repository] -l-> [Helper]
+[Repository] -r-> [Utility]
+
+
+@enduml

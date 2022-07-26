@@ -1,0 +1,23 @@
+@startuml
+
+package "Web" {
+  [Controller]
+}
+
+package "Domain" {
+  [Service]
+}
+package "Persistence" {
+  [Entity]
+  [Repository]
+}
+
+[Service] --> [Entity]
+[Service] --> [Repository]
+[Entity] -r-> [Repository]
+
+[Controller] ..> [Service]
+[Controller] --> [Entity]
+[Controller] --> [Repository]
+
+@enduml

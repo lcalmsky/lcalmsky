@@ -1,0 +1,10 @@
+@startuml
+
+object Web
+object Domain
+object Persistence
+
+Web -d-> Domain
+Domain -d-> Persistence
+
+@enduml
