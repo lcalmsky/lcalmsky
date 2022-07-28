@@ -22,11 +22,11 @@
 
 그렇다면 어떻게 이게 가능할까요? 도메인 코드와 영속성 코드간의 의존성을 역전시키게 되면, 영속성 코드가 도메인코드에 의존하게 되는데, 이 상황에서 도메인 코드를 변경할 이유를 줄여봅시다.
 
-![](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/docs/blog/hexagonal-architecture/tranditional-architecture-2.puml.puml)
+![](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/docs/blog/hexagonal-architecture/tranditional-architecture-2.puml)
 
 일반적인 계층구조에서 도메인 계층에 서비스는 영속성 계층의 엔터티와 리파지토리와 상효작용하고 있습니다. 엔터티는 도메인 객체를 표현하고 도메인 코드는 이 엔터티들의 상태를 변경하는 일을 하기 때문에 먼저 엔터티를 도메인 계층으로 올립니다. 그렇게되면 영속성 계층의 리파지토리가 도메인 계층에 있는 엔터티에 의존하게 되기 때문에 두 계층에 순환 의존성이 생기게 됩니다.
 
-![](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/docs/blog/hexagonal-architecture/circular-dependency.puml.puml)
+![](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/lcalmsky/lcalmsky/master/docs/blog/hexagonal-architecture/circular-dependency.puml)
 
 순환 의존성은 A가 B를 의존하는데 B가 다시 A를 의존하는 것을 말합니다. 바로 이 부분이 DIP를 적용할 수 있는 부분입니다.
 
