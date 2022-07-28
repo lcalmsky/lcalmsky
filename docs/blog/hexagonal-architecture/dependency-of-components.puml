@@ -1,0 +1,22 @@
+@startuml
+
+object A {
+}
+object B {
+}
+object C {
+}
+object D {
+}
+object E {
+}
+
+A -r-> B
+B -> E
+A ..> E
+A ..> D
+A -d-> C
+C -> D
+D -> E
+
+@enduml
