@@ -2,16 +2,15 @@
 
 package "Domain" {
   [Service]
+  [Entity]
 }
 package "Persistence" {
-  [Entity]
   [Repository]
 }
 
-[Service] -d-> [Entity]
-
+[Service] -l-> [Entity]
 [Service] -d-> [Repository]
-[Entity] <-r- [Repository]
+[Repository] -> [Entity]
 
 
 @enduml

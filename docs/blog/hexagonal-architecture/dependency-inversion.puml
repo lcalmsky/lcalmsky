@@ -1,0 +1,20 @@
+@startuml
+
+package "Domain" {
+  [Service]
+  [Entity]
+  [Repository]
+}
+package "Persistence" {
+  [RepositoryImpl]
+  [Persisted Entity]
+}
+
+[Service] -d-> [Entity]
+[Service] -d-> [Repository]
+[Repository] -l-> [Entity]
+[RepositoryImpl] -u-> [Repository]
+[RepositoryImpl] -l-> [Persisted Entity]
+
+
+@enduml
