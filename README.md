@@ -5,7 +5,7 @@
 
 ## Hi there 👋
 - :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
-- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) for increasing user retention rate.
+- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) as a backend developer for increasing user retention rate.
 
 ## GitHub Stats
 
