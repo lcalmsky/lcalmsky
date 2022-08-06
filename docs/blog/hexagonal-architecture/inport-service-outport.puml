@@ -1,0 +1,28 @@
+@startuml
+
+package "application.port.in" {
+  [SendMoneyUseCase]
+  [SendMoneyCommand]
+}
+
+package "application.service" {
+  [SendMoneyService]
+}
+
+package "domain" {
+  [Account]
+}
+
+package "application.port.out" {
+  [LoadAccountPort]
+  [UpdateAccountStatePort]
+}
+
+[SendMoneyUseCase] -d-> [SendMoneyCommand]
+[SendMoneyUseCase] <|- [SendMoneyService]
+[SendMoneyService] -d-> [Account]
+[SendMoneyService] -r-> [LoadAccountPort]
+[SendMoneyService] --> [UpdateAccountStatePort]
+[LoadAccountPort] -[hidden]-> [UpdateAccountStatePort]
+
+@enduml
