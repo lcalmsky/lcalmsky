@@ -1,0 +1,36 @@
+@startuml
+
+package "adapter.in.web" {
+  [AController]
+  [BController]
+}
+
+[AController] -[hidden]d-> [BController]
+
+package "application.port.in" {
+  [APort]
+  [BPort]
+  [CPort]
+}
+
+[APort] -[hidden]d-> [BPort]
+[BPort] -[hidden]d-> [CPort]
+
+package "application.service" {
+  [AService]
+  [BService]
+}
+
+[AService] -[hidden]d-> [BService]
+
+[AController] -> [APort]
+[APort] <|- [AService]
+
+[BController] -> [BPort]
+[BController] -> [CPort]
+
+[BPort] <|- [AService]
+[CPort] <|- [BService]
+
+
+@enduml
