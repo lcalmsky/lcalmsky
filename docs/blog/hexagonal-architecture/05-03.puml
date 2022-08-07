@@ -1,0 +1,33 @@
+@startuml
+
+package "adapter.in.web" {
+  [WebController]
+  [WebSocketController]
+}
+
+[WebController] -[hidden]d-> [WebSocketController]
+
+package "application.port.in" {
+  [APort]
+  [BPort]
+}
+
+[APort] -[hidden]d-> [BPort]
+
+package "application.service" {
+  [AService]
+  [BService]
+}
+
+[AService] -[hidden]d-> [BService]
+
+[WebController] -> [APort]
+[APort] <|- [AService]
+
+[WebSocketController] -u-> [APort]
+[WebSocketController] -|> [BPort]
+
+[BPort] <- [BService]
+
+
+@enduml
