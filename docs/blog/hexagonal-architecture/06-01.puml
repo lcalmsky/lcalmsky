@@ -1,0 +1,26 @@
+@startuml
+
+package "application.service" {
+  [AService]
+  [BService]
+}
+
+[AService] -[hidden]d-> [BService]
+
+package "application.port.out" {
+  [APort]
+  [BPort]
+}
+
+[APort] -[hidden]d-> [BPort]
+
+package "adapter.out.persistence" {
+  [PersistenceAdapter]
+}
+
+[AService] -> [APort]
+[BService] -> [BPort]
+[APort] <|- [PersistenceAdapter]
+[BPort] <|- [PersistenceAdapter]
+
+@enduml

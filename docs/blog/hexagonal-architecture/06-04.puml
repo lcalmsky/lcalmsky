@@ -1,0 +1,33 @@
+@startuml
+
+package "application.service" {
+  [SendMoneyService]
+  [RegisterAccountService]
+}
+
+[SendMoneyService] -[hidden]d--> [RegisterAccountService]
+
+package "application.port.out" {
+  [LoadAccountRepository]
+  [UpdateAccountRepository]
+  [CreateAccountRepository]
+}
+
+[LoadAccountRepository] -[hidden]d-> [UpdateAccountRepository]
+[UpdateAccountRepository] -[hidden]d-> [CreateAccountRepository]
+
+package "adapter.out.persistence" {
+  [AccountPersistenceAdapter]
+  [UserPersistenceAdapter]
+}
+[AccountPersistenceAdapter] -[hidden]d-> [UserPersistenceAdapter]
+
+[SendMoneyService] -> [LoadAccountRepository]
+[SendMoneyService] -> [UpdateAccountRepository]
+[RegisterAccountService] -> [CreateAccountRepository]
+
+[LoadAccountRepository]   <|-r- [AccountPersistenceAdapter]
+[UpdateAccountRepository] <|-- [AccountPersistenceAdapter]
+[CreateAccountRepository] <|-u- [UserPersistenceAdapter]
+
+@enduml
