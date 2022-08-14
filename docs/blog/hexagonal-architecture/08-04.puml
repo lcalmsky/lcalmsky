@@ -1,0 +1,37 @@
+@startuml
+
+package "adapter.in.web" {
+  [AccountController]
+  [AccountWebModel]
+}
+
+[AccountController] -d--> [AccountWebModel]
+
+package "application" {
+  [SendMoneyUseCase]
+  [SendMoneyService]
+  [Account]
+  [UpdateAccountStatePort]
+  [AccountStatus]
+}
+
+[AccountController] -> [SendMoneyUseCase]
+[SendMoneyUseCase] <|- [SendMoneyService]
+[SendMoneyUseCase] -d-> [AccountStatus]
+[SendMoneyService] -d-> [Account]
+[SendMoneyService] -r-> [UpdateAccountStatePort]
+[UpdateAccountStatePort] -d-> [AccountStatus]
+[Account] -[hidden]d-> [AccountStatus]
+
+package "adapter.out.persistence" {
+  [AccountPersistenceAdapter]
+  [AccountEntity]
+}
+
+[AccountPersistenceAdapter] -d--> [AccountEntity]
+[UpdateAccountStatePort] <|-u- [AccountPersistenceAdapter]
+
+[AccountWebModel] -|> [AccountStatus]
+[AccountStatus] <|- [AccountEntity]
+
+@enduml
