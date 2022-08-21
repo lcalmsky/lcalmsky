@@ -12,7 +12,7 @@ class Triangle extends Shape {
 }
 ```
 
-Triangle 객체가 어떤 타입인지 알아보려면 아래처럼 확인할 수 있습니다.
+`Triangle` 객체가 어떤 타입인지 알아보려면 아래처럼 확인할 수 있습니다.
 
 ```java
 class Scratch {
@@ -42,7 +42,7 @@ true
 Class<? extends Triangle> triangleClass = triangle.getClass();
 ```
 
-그렇다면 이 타입이 Shape의 subclass라는 것은 어떻게 알 수 있을까요?
+그렇다면 이 타입이 `Shape`의 subclass라는 것은 어떻게 알 수 있을까요?
 
 ```java
 System.out.println(triangle.getClass() == Shape.class);
@@ -52,7 +52,7 @@ System.out.println(triangle.getClass() == Shape.class);
 
 `==` 연산을 사용했으므로 너무 당연히 `false`가 나와야겠죠?
 
-실제론 "incomparable types: java.lang.Class<capture#1 of ? extends Triangle> and java.lang.Class<Shape>" 이런 에러가 발생했습니다.
+실제론 **"incomparable types: java.lang.Class<capture#1 of ? extends Triangle> and java.lang.Class<Shape>"** 이런 에러가 발생했습니다.
 
 아무튼 타입간의 단순 `==` 연산으로는 부모-자식 관계라는 것을 확인할 수 없습니다.
 
@@ -86,5 +86,5 @@ true
 **한 줄 요약**
 
 ```
-부모타입.isAssignableFrom(자식타입)
+부모타입.isAssignableFrom(자식타입);
 ```
