@@ -48,11 +48,11 @@ import java.util.Optional;
 class Scratch {
 
   public static void main(String[] args) {
-    String origin = Optional.of("이건 출력 되어야 함").orElse(print());
+    String origin = Optional.of("이건 출력 되어야 함").orElse(getString());
     System.out.println("origin = " + origin);
   }
 
-  private static String print() {
+  private static String getString() {
     System.out.println("이건 출력되지 않아야함");
     return "이건 출력되지 않아야함";
   }
@@ -78,11 +78,11 @@ import java.util.Optional;
 class Scratch {
 
   public static void main(String[] args) {
-    String origin = Optional.of("이건 출력 되어야 함").orElseGet(Scratch::print);
+    String origin = Optional.of("이건 출력 되어야 함").orElseGet(Scratch::getString);
     System.out.println("origin = " + origin);
   }
 
-  private static String print() {
+  private static String getString() {
     System.out.println("이건 출력되지 않아야함");
     return "이건 출력되지 않아야함";
   }
