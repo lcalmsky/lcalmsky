@@ -14,6 +14,6 @@ String s = stringList.get(0); // ClassCastException
 
 이후, `rawList`에 `Integer` 타입의 1을 추가하면, `stringList`에는 `String` 타입의 객체만 저장하도록 선언했음에도 불구하고, Integer 타입의 객체가 추가됩니다. 이러한 상황을 "heap pollution"이라고 부릅니다.
 
-마지막으로, `stringList`에서 첫 번째 객체를 가져오려고 하면, C`lassCastException`이 발생합니다. 이는 `rawList`에 잘못된 타입의 객체가 추가됨으로써, `stringList`의 타입 안정성이 깨졌기 때문입니다.
+마지막으로, `stringList`에서 첫 번째 객체를 가져오려고 하면, `ClassCastException`이 발생합니다. 이는 `rawList`에 잘못된 타입의 객체가 추가됨으로써, `stringList`의 타입 안정성이 깨졌기 때문입니다.
 
 따라서, 제네릭스를 사용할 때에는 이러한 "heap pollution" 문제에 주의해야 하며, 원시 타입(raw type)을 사용하는 것은 지양해야 합니다.
