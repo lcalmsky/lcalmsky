@@ -55,4 +55,14 @@ class LargeObject {
 
 위 코드에서 `PhantomReference`를 생성할 때, 생성한 `ReferenceQueue`를 전달하면 가비지 컬렉션이 발생할 때 `PhantomReference`가 이 `ReferenceQueue`에 등록됩니다. 그리고 가비지 컬렉션 이후에는 `ReferenceQueue`에서 `PhantomReference`를 가져와서 처리하면 됩니다. 이 때, 가져온 Reference가 생성한 `PhantomReference`와 같은지를 확인하여 해당 객체가 가비지 컬렉션되었는지를 판단할 수 있습니다.
 
+실행 결과는 다음과 같습니다.
+
+```text
+startTime = 2023-05-11T00:02:56.568798
+LargeObject 객체가 가비지 컬렉션 되었습니다.
+collectedTime = 2023-05-11T00:02:56.608290
+```
+
+여러 차례 테스트 해봤는데 가비지 컬렉션 되지 않은 경우도 많이 있었습니다. Thread.sleep으로 충분한 시간을 주는 등 가비지 컬렉션이 발생할 때까지 기다리면 위와 같은 결과를 계속 확인할 수 있을 거 같네요.
+
 배치 작업이나 bulk API 요청 등을 할 때 메모리를 고려하여 `chunkSize`를 설정하는데, 가비지 컬렉터가 어느 정도 용량까지 잘 커버하면서 수거해가는지 확인하는데 위 코드를 응용하면 좋을 거 같네요.
