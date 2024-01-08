@@ -83,3 +83,96 @@ where hashed_column = md5(concat(val1, v1l2))
 ```
 
 이렇게 함으로써 다양한 쿼리에 유연하게 대응할 수 있습니다.
+
+### 실습
+
+카디널리티가 높은 customer_id를 먼저, 범위인 order_date를 나중에 검색하도록 where 절을 구성합니다.
+
+```mysql
+select *
+from orders
+where customer_id = ?
+  and order_date > ?
+order by order_date desc
+limit 10;
+```
+
+다음으로 실행 계획 확인합니다.
+
+```mysql
+explain
+select *
+from orders
+where customer_id = ?
+  and order_date > ?
+order by order_date desc
+limit 10;
+```
+
+> `explain`은 MySQL에서 실행 계획을 분석하는 데 사용되는 명령어로 쿼리를 실행하기 전에 EXPLAIN 명령을 사용하면 쿼리 옵티마이저가 어떻게 실행 계획을 수립할지 미리 확인할 수 있습니다. 
+> 
+> EXPLAIN 결과는 테이블의 각 컬럼이나 조인 등에 대한 정보를 포함합니다.
+> 
+> 1. id: 각 테이블이나 서브쿼리에 대한 고유한 식별자입니다. 여러 테이블이 조인되어 있을 경우, 어떤 테이블이 어떤 조인에 사용되었는지를 구분하기 위한 용도로 사용됩니다. 
+> 2. select_type: 쿼리의 실행 유형을 나타냅니다. 가능한 값으로는 SIMPLE (단순한 SELECT), PRIMARY (주 테이블의 SELECT), SUBQUERY (서브쿼리), DERIVED (FROM 절의 서브쿼리), UNION, UNION RESULT, 등이 있습니다. 
+> 3. table: 해당 행에서 사용된 테이블의 이름입니다. 
+> 4. partitions: 쿼리가 어떤 파티션을 사용하는지를 나타냅니다. 파티션된 테이블의 경우에만 의미가 있습니다. 
+> 5. type: 테이블에 대한 접근 방법을 나타냅니다. 예를 들어, ALL은 풀 테이블 스캔을 의미하며, index는 인덱스를 사용한다는 것을 나타냅니다. 다양한 값들이 존재하며, 성능에 중요한 영향을 미칩니다. 
+> 6. possible_keys: 가능한 인덱스를 나타냅니다. 여러 개의 인덱스를 사용할 수 있지만, 최적의 인덱스가 선택되었다면 해당 컬럼은 보통 key에 나타납니다. 
+> 7. key: 실제로 사용된 인덱스의 이름입니다. 만약 NULL이면 쿼리 옵티마이저가 적절한 인덱스를 선택하지 못한 것입니다. 
+> 8. key_len: 사용된 인덱스의 길이를 나타냅니다. 길이가 짧을수록 성능이 향상될 수 있습니다. 
+> 9. ref: 인덱스를 사용하여 테이블의 어떤 컬럼이나 상수를 비교했는지를 나타냅니다. 
+> 10. rows: 쿼리가 처리하는 행의 수를 나타냅니다. 
+> 11. filtered: 결과를 필터링하는 데 사용된 조건의 비율을 나타냅니다. 
+> 12. Extra: 기타 추가 정보가 포함되어 있습니다. JOIN이나 서브쿼리 사용 여부, 정렬 방법, 사용된 인덱스의 종류 등을 나타냅니다.
+
+현재 인덱스가 없으므로 type = all을 확인할 수 있습니다.
+
+인덱스를 생성해보겠습니다.
+
+먼저 order_date를 선행 컬럼으로 지정해보겠습니다. 
+
+```mysql
+create index idx_order_date_customer_id on orders(order_date, customer_id);
+```
+
+다시 실행 계획을 보면 type = range로 바뀌어있고, 옵티마이저가 판단하기 위해 읽은 rows수, filtered 비율 등을 확인할 수 있습니다.
+
+filtered의 값은 유효한 조건에 의해 필터링 된 비율로 현재는 수치가 낮을 수밖에 없습니다.
+
+explain anlyze를 이용해 실제 쿼리 소요시간을 확인할 수 있습니다.
+
+```mysql
+explain analyze
+select *
+from orders
+where customer_id = ?
+  and order_date > ?
+order by order_date desc
+limit 10;
+```
+
+다음으로 복합인덱스의 컬럼 순서를 바꿔서 생성해보겠습니다.
+
+```mysql
+create index idx_customer_id_order_date on orders (customer_id, order_date);
+```
+
+똑같이 실행 계획을 실행해보면 type은 동일하게 range이지만 rows가 급격하게 줄어있고 filtered는 높아져 효율적으로 탐색하는 것을 알 수 있습니다.
+
+다음으로 아직 생성하지 않은 인덱스의 히스토그램을 확인해보겠습니다.
+
+```mysql
+analyze table orders update histogram on customer_id, status with 100 buckets;
+```
+
+생성 되었으면 데이터베이스를 변경해서 확인할 수 있습니다.
+
+```mysql
+use information_schema
+select *
+from COLUMN_STATISTICS
+where TABLE_NAME = 'orders';
+```
+
+결과의 histogram 컬럼의 값을 확인해보면 데이터의 분표를 알 수 있습니다.
