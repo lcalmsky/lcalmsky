@@ -53,3 +53,28 @@
 만약 여러 컬럼을 명시하지 않고 카디널리티가 상대적으로 낮은 컬럼으로 정렬을 해야하는 경우, ORDER BY 절에 PK를 추가하여 매번 같은 결과를 얻을 수 있습니다.
 
 ORDER BY절에 인덱스를 이용하고 있다면 PK를 추가하는 것은 성능에 영향을 주지 않습니다. 모든 보조 인덱스(secondary index)는 실제 테이블 레코드에 접근하기 위해 내부적으로 PK를 가지고있기 때문입니다.
+
+### 실습
+
+#### sort_buffer_size 확인
+
+```mysql
+SHOW VARIABLES LIKE 'sort_buffer_size';
+```
+
+#### sort_buffer_siez 변경
+
+```mysql
+SET SESSION sort_buffer_size = 2 * 262144;
+```
+
+> global 단위와 session 단위 변경이 모두 가능하지만 되도록이면 session 단위로 설정하는 게 좋습니다. global 단위로 변경하면 메모리 사용량이 전체적으로 증가할 수 있어 성능에 더 안 좋은 영향을 미칠 수 있습니다.    
+> session: 데이터베이스에 연결하는 커넥션 단위로 설정  
+> global: 전체 커넥션 단위로 설정  
+
+#### sort_merge_passes 확인
+
+```mysql
+SHOW STATUS LIKE 'sort_merge_passes';
+```
+
