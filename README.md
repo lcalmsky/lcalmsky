@@ -36,7 +36,7 @@
 
 [//]: # (<div align="center">)
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&theme=onedark)](https://github.com/lcalmsky)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&theme=onedark&layout=compact)](https://github.com/lcalmsky)
 
 [//]: # (</div>)
 
