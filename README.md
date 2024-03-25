@@ -5,7 +5,7 @@
 
 ## Hi there 👋
 - :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
-- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) as a backend developer for increasing user retention rate.
+- 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) as a backend developer in the core squad of the platform tribe.
 
 ## GitHub Stats
 
@@ -36,7 +36,7 @@
 
 [//]: # (<div align="center">)
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&theme=onedark)](https://github.com/lcalmsky)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lcalmsky&theme=onedark&layout=compact)](https://github.com/lcalmsky)
 
 [//]: # (</div>)
 
