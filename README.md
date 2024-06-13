@@ -4,7 +4,7 @@
 ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/images/jaimes-github-logo-poiret-one-regular.gif)
 
 ## Hi there 👋
-- :smiley: I'm a developer who enjoys sharing and communicating what I've learned.
+- :smiley: I am a backend developer who enjoys sharing and communicating what I have learned and experienced.
 - 🔭 I’m currently working on ![](https://raw.githubusercontent.com/lcalmsky/lcalmsky/main/resources/logo/jobis%26villains.png) as a backend developer in the core squad of the platform tribe.
 
 ## GitHub Stats
