@@ -1,0 +1,26 @@
+@startuml
+skinparam style strictuml
+skinparam shadowing false
+skinparam linetype ortho
+
+package "DI 컨텍스트 영역" {
+    object "애플리케이션에 생성된\n복합 레지스트리" as CompositeRegistry {
+    }
+
+    object "사용자 메트릭" as UserMetric
+    UserMetric -down-> CompositeRegistry : 등록
+
+    object PrometheusMeterRegistry
+    CompositeRegistry -down-> PrometheusMeterRegistry : 추가
+
+    object StackdriverMeterRegistry
+    CompositeRegistry -right-> StackdriverMeterRegistry : 추가
+}
+
+object "전역\n레지스트리" as GlobalRegistry
+object "라이브러리\n메트릭" as LibraryMetric
+
+LibraryMetric -down-> GlobalRegistry : 등록
+GlobalRegistry -right[dashed]-> CompositeRegistry : 등록
+
+@enduml
